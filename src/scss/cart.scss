@@ -1,0 +1,102 @@
+.cart {
+    display: grid;
+    grid-template-rows: 6.5rem auto 18rem;
+    height: 100%;
+
+    @media only screen and (min-width: $desktop) {
+        grid-template-rows: 8.5rem auto 18rem;
+    }
+
+    &__header {
+        display: flex;
+        padding: 2rem 3rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $grey;
+
+        @media only screen and (min-width: $desktop) {
+            padding: 2rem 5.5rem;
+        }
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-size: 2rem;
+
+        @media only screen and (min-width: $desktop) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__close {
+        .close-icon {
+            width: 1.5rem;
+        }
+    }
+
+    &__items {
+        padding: 1rem 3.5rem 0;
+        overflow: scroll;
+
+        @media only screen and (min-width: $desktop) {
+            padding: 1rem 5.5rem 0;
+        }
+
+        .cart-item {
+            display: flex;
+            padding: 2rem 0;
+            border-bottom: 1px solid $grey;
+
+            &__image {
+                max-width: 13rem;
+
+                @media only screen and (min-width: $desktop) {
+                    max-width: 16rem;
+                }
+            }
+
+            &__details {
+                padding: 1.5rem 0 0 1.5rem;
+            }
+
+            &__name {
+                font-family: $primary-font;
+                font-size: 1.6rem;
+                font-weight: 300;
+                line-height: 1.5;
+            }
+
+            &__price {
+                display: block;
+                margin: .5rem 0 1.5rem;
+                color: $orange;
+                font-size: 1.6rem;
+                font-family: $primary-font;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+
+    &__total {
+        border-top: 1px solid $grey;
+        text-align: center;
+    }
+
+    &__subtotal {
+        margin: 2rem 0 2.5rem;
+        font-family: $primary-font;
+        font-size: 1.8rem;
+    }
+
+    &__checkout {
+        display: block;
+        margin: 0 auto;
+        width: 30rem;
+    }
+
+    &__continue {
+        display: block;
+        margin: 2rem auto 0;
+    }
+}

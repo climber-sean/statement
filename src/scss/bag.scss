@@ -1,0 +1,22 @@
+.bag {
+
+    &__inner {
+        position: relative;
+    }
+
+    &__image {
+        max-width: 25px;
+        width: 25px;
+    }
+
+    &__quantity {
+        position: absolute;
+        z-index: 1;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        font-family: $secondary-font;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}

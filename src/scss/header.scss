@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 3rem 1rem;
+
+    @media only screen and (min-width: $desktop) {
+        position: fixed;
+        top: 0;
+        padding: 5rem 6rem 1rem;
+    }
+}
+
+// Logo Component
+
+@import 'logo.scss';
+
+// Bag Component
+
+@import 'bag.scss';

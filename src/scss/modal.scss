@@ -1,0 +1,25 @@
+.modal {
+    display: none;
+    background: rgba($black, 0.2);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+
+    &.active {
+        display: block;
+    }
+
+    &__inner {
+        background: $white;
+        height: 100%;
+        width: calc(100vw - 40px);
+        margin-left: auto;
+        transform: translateX(100%);
+
+        @media only screen and (min-width: $tablet-min) {
+            max-width: 52rem;
+        }
+    }
+}

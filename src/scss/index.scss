@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Variables
+
+$black: #000000;
+$orange: #FF5C00;
+$grey: #EBEBEB;
+$white: #FFFFFF;
+$light-blue: #EBF6F8;
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+$mobile: 767px;
+$tablet-min: 768px;
+$tablet-max: 1024px;
+$desktop: 1025px;
+
+// Global Styling & Resets
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-active {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+// Button Style Reset
+button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.res-img {
+    width: 100%;
+    height: auto;
+}
+
+// Header
+@import 'header.scss';
+
+// Section
+@import 'section.scss';
+
+// Description
+@import 'description.scss';
+
+// Product
+@import 'product.scss';
+
+// Btn
+@import 'btn.scss';
+
+// Cart
+@import 'cart.scss';
+
+// Modal
+@import 'modal.scss';
+
+// Animations
+@import 'animations.scss';
+
+// Loader
+@import 'loader.scss';

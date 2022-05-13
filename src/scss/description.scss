@@ -1,0 +1,29 @@
+.description {
+    text-align: center;
+
+    @media only screen and (min-width: $desktop) {
+        max-width: 50rem;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+        font-family: $primary-font;
+        font-size: 3rem;
+        font-weight: 400;
+
+        @media only screen and (min-width: $desktop) {
+            font-size: 4rem;
+        }
+    }
+
+    &__copy {
+        color: lighten($black, 60%);
+        font-family: $secondary-font;
+        font-size: 1.4rem;
+        line-height: 1.6;
+
+        @media only screen and (min-width: $desktop) {
+            font-size: 1.8rem;
+        }
+    }
+}
